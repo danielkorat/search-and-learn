@@ -16,7 +16,7 @@ datasets:
 warmup_ratio: 0.05
 val_set_size: 0.0
 output_dir: ./models/prm
-wandb_project: preference-models
+wandb_project: PRM
 #wandb_entity: domain-generalization
 wandb_watch:
 wandb_name: "llama-32-1b-bs32_lr2e-6_prm"
