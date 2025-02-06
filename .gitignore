@@ -163,3 +163,4 @@ cython_debug/
 
 data/
 train-prm/models/
+train-prm/wandb/
