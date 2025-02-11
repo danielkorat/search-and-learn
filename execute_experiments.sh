@@ -22,7 +22,7 @@ CONFIG=$HOME/search-and-learn/recipes/$MODEL/$METHOD.yaml
 
 # Repeat for seeds 0-4
 for s in 0 1 2 3 4; do
-    python $USER_HOME/search-and-learn/scripts/test_time_compute.py $CONFIG \
+    python $HOME/search-and-learn/scripts/test_time_compute.py $CONFIG \
         --n=2 \
         --num_samples=5 \
         --seed=$s
