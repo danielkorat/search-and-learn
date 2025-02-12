@@ -272,10 +272,9 @@ class RLHFFlow(PRM):
 
 
 def load_prm(config: Config) -> PRM:
-    if config.prm_path == "peiyi9979/math-shepherd-mistral-7b-prm":
-        return MathShepherd(config)
-
-    if config.prm_path == "RLHFlow/Llama3.1-8B-PRM-Deepseek-Data":
+    if config.prm_type == "RLHFlow":
         return RLHFFlow(config)
+    if config.prm_type == "MathShepherd":
+        return MathShepherd(config)
 
     raise NotImplementedError(f"PRM {config.prm_path} not implemented")
